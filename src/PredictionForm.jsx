@@ -111,7 +111,7 @@ const PredictionForm = () => {
 
         <button
           type="submit"
-          className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg text-base font-semibold shadow-md hover:bg-indigo-700 transition duration-300 mt-6"
+          className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg text-base font-semibold shadow-md hover:bg-indigo-700 transition duration-300 mt-6 cursor-pointer"
         >
           Predict Addiction Level
         </button>
@@ -122,7 +122,7 @@ const PredictionForm = () => {
         {loading && (
           <div className="text-center py-4">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-indigo-600 mb-2"></div>
-            <p className="text-indigo-600 font-medium">Analyzing your phone usage...</p>
+            <p className="text-indigo-600 font-medium">🤖 Predicting using Trained Model...</p>
           </div>
         )}
 
@@ -146,7 +146,7 @@ const PredictionForm = () => {
 
             {adviceList.length > 0 && (
               <div className="mt-3">
-                <p className="font-medium text-gray-800 mb-2 font-semibold">
+                <p className="text-gray-800 mb-2 font-semibold">
                   💡 Here's some advice:
                 </p>
                 <ul className="space-y-2 pl-5">
